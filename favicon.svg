@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AgentNet">
+  <defs>
+    <linearGradient id="agentnet-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9af4d5" />
+      <stop offset="100%" stop-color="#ffbc73" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0b1020" />
+  <path d="M18 20L32 14L46 20V34L32 50L18 34Z" fill="none" stroke="url(#agentnet-gradient)" stroke-width="3.5" stroke-linejoin="round" />
+  <circle cx="32" cy="14" r="4.5" fill="#edf3ff" />
+  <circle cx="18" cy="20" r="4.5" fill="#7ce4da" />
+  <circle cx="46" cy="20" r="4.5" fill="#ffbc73" />
+  <circle cx="18" cy="34" r="4.5" fill="#edf3ff" />
+  <circle cx="46" cy="34" r="4.5" fill="#edf3ff" />
+  <circle cx="32" cy="50" r="4.5" fill="#7ce4da" />
+</svg>
