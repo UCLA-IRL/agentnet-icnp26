@@ -1,24 +1,15 @@
-const revealNodes = document.querySelectorAll("[data-reveal]");
+const lastUpdate = document.getElementById("lastUpdate");
 
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        }
+if (lastUpdate) {
+  lastUpdate.textContent = new Date(document.lastModified).toLocaleDateString();
+}
 
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      });
-    },
-    {
-      threshold: 0.18,
-      rootMargin: "0px 0px -8% 0px",
-    },
-  );
+const toggle = document.getElementById("navToggle");
+const wrap = document.getElementById("navWrap");
 
-  revealNodes.forEach((node) => observer.observe(node));
-} else {
-  revealNodes.forEach((node) => node.classList.add("is-visible"));
+if (toggle && wrap) {
+  toggle.addEventListener("click", () => {
+    const open = wrap.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
 }

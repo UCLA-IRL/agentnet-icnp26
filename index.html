@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgentNet 2026 | ICNP 2026 Workshop</title>
     <meta
@@ -11,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -19,345 +20,240 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-copy">
-            <strong>AgentNet 2026</strong>
-            <span>ICNP 2026 Workshop</span>
-          </span>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a class="navbar-brand" href="#top" aria-label="AgentNet 2026 home">
+          AgentNet 2026
         </a>
-        <nav class="site-nav" aria-label="Primary">
-          <a href="#organizers">Organizers</a>
-          <a href="#cfp">Call for Papers</a>
-          <a href="#topics">Topics</a>
-          <a href="#dates">Dates</a>
-        </nav>
-      </header>
 
-      <main id="top">
-        <section class="hero section">
-          <div class="hero-copy" data-reveal>
-            <p class="eyebrow">IEEE ICNP 2026 Workshop</p>
-            <h1>AgentNet 2026</h1>
-            <p class="hero-tagline">
-              Networking Foundations for Autonomous Agents
-            </p>
-            <p class="hero-body">
-              AgentNet explores whether large-scale agent ecosystems need a new
-              networking thin waist for naming, discovery, trust, communication,
-              delegation, provenance, and coordination across administrative
-              domains.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#cfp">
-                Read the Call for Papers
-              </a>
-              <a class="button button-secondary" href="#dates">
-                View Important Dates
-              </a>
-            </div>
-          </div>
+        <button
+          class="navbar-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-          <aside class="hero-panel" data-reveal>
-            <div class="fact-card">
-              <span class="fact-label">Workshop Date</span>
-              <strong>October 5, 2026</strong>
-              <span class="fact-detail">Confirmed by ICNP 2026 workshop chairs</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-label">Location</span>
-              <strong>Tempe, Arizona, USA</strong>
-              <span class="fact-detail">Held with IEEE ICNP 2026</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-label">Submission Site</span>
-              <strong>
-                <a href="https://agentnet-icnp26.named-data.net/" target="_blank" rel="noopener">
-                  Submission Portal
-                </a>
-              </strong>
-              <span class="fact-detail">agentnet-icnp26.named-data.net</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-label">Submission Deadline</span>
-              <strong>June 22, 2026</strong>
-              <span class="fact-detail">AoE deadline; notifications July 26, 2026</span>
-            </div>
-          </aside>
+        <div class="navbar-nav-wrap" id="navWrap">
+          <ul class="navbar-nav" id="navMenu">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#organizers">Organizers</a></li>
+            <li><a href="#tpc">TPC</a></li>
+            <li><a href="#cfp">Call for Papers</a></li>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#dates">Dates</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="top" class="page-header-section">
+      <div class="container">
+        <div class="iqua-pub-header">
+          <h1>AgentNet 2026</h1>
+          <p>
+            Networking Foundations for Autonomous Agents<br />
+            IEEE ICNP 2026 Workshop, Tempe, Arizona, USA, October 5, 2026
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="info-box">
+          <p>
+            Submission deadline: <strong>June 22, 2026</strong> AoE.
+            Notifications: <strong>July 26, 2026</strong>.
+            Submit through the
+            <a
+              href="https://agentnet-icnp26.named-data.net/"
+              target="_blank"
+              rel="noopener"
+            >
+              AgentNet 2026 submission site
+            </a>.
+          </p>
+        </div>
+
+        <section id="organizers">
+          <h1>Organizers</h1>
+          <p>Dirk Kutscher (HKUST-GZ, China)</p>
+          <p>Lan Wang (University of Memphis, USA)</p>
+          <p>Beichuan Zhang (University of Arizona, USA)</p>
+          <p>Lixia Zhang (UCLA, USA)</p>
         </section>
 
-        <section class="notice-strip" data-reveal>
+        <section id="tpc">
+          <h1>Technical Program Committee</h1>
+          <p>Dirk Kutscher (HKUST-GZ, China)</p>
+          <p>K. K. Ramakrishnan (UC Riverside, USA)</p>
+          <p>Lan Wang (University of Memphis, USA)</p>
+          <p>Andreas Terzis (Anthropic, USA)</p>
+          <p>Tianyuan Yu (UCLA, USA)</p>
+          <p>Beichuan Zhang (University of Arizona, USA)</p>
+          <p>Lixia Zhang (UCLA, USA)</p>
+        </section>
+
+        <section id="cfp">
+          <h1>Call for Papers</h1>
           <p>
-            This site starts with the accepted workshop proposal content and the
-            confirmed logistics from the organizer email exchange. Additional
-            submission details will be updated as the ICNP 2026 workshop
-            schedule is finalized.
+            The emergence of AI agents introduces new requirements for networked
+            systems. Agents are increasingly expected to discover services and
+            other agents, delegate tasks, coordinate actions, exchange state,
+            reason over provenance, and operate across administrative and trust
+            boundaries. These interaction patterns go beyond traditional
+            host-centric request-response communication and raise fundamental
+            questions for network protocol design.
+          </p>
+          <p>
+            Current Internet architectures provide strong foundations for packet
+            delivery, naming, transport, and secure communication channels, but
+            they do not directly provide abstractions for agent identity,
+            capability-based discovery, intent-driven communication, trust
+            delegation, provenance-aware exchange, or accountable multi-agent
+            coordination. As a result, many emerging agent systems rely on
+            application-specific integration frameworks, centralized platforms,
+            or ad hoc protocol conventions.
+          </p>
+          <p>
+            AgentNet 2026 invites original research, position papers, and
+            early-stage work on the networking foundations of autonomous agent
+            ecosystems. A central question for the workshop is whether
+            large-scale agent ecosystems require a new architectural thin waist:
+            a minimal interoperability substrate that allows heterogeneous
+            agents, tools, models, platforms, and administrative domains to
+            communicate and coordinate without requiring global agreement on
+            application frameworks, reasoning engines, or trust authorities.
+          </p>
+          <p>
+            The workshop seeks to bring together researchers and practitioners
+            from network protocols, distributed systems, security, AI systems,
+            information-centric networking, Web architecture, and federated
+            systems to identify the key protocol abstractions, architectural
+            principles, and deployment models for agent networking.
           </p>
         </section>
 
-        <section id="organizers" class="section">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">Organizers</p>
-            <h2>Workshop Organizing Team</h2>
-            <p>
-              The initial workshop website follows the requested starting point:
-              title, organizer list, and the material from the accepted call for
-              papers onward.
-            </p>
-          </div>
-
-          <div class="organizer-grid">
-            <article class="organizer-card" data-reveal>
-              <h3>Dirk Kutscher</h3>
-              <p>Hong Kong University of Science and Technology (Guangzhou)</p>
-            </article>
-            <article class="organizer-card" data-reveal>
-              <h3>Lan Wang</h3>
-              <p>University of Memphis</p>
-            </article>
-            <article class="organizer-card" data-reveal>
-              <h3>Beichuan Zhang</h3>
-              <p>University of Arizona</p>
-            </article>
-            <article class="organizer-card" data-reveal>
-              <h3>Lixia Zhang</h3>
-              <p>University of California, Los Angeles</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="cfp" class="section">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">Call for Papers</p>
-            <h2>Networking Foundations for Autonomous Agents</h2>
-          </div>
-
-          <div class="content-layout">
-            <article class="longform" data-reveal>
-              <p>
-                The emergence of AI agents introduces new requirements for
-                networked systems. Agents are increasingly expected to discover
-                services and other agents, delegate tasks, coordinate actions,
-                exchange state, reason over provenance, and operate across
-                administrative and trust boundaries. These interaction patterns
-                go beyond traditional host-centric request-response communication
-                and raise fundamental questions for network protocol design.
-              </p>
-              <p>
-                Current Internet architectures provide strong foundations for
-                packet delivery, naming, transport, and secure communication
-                channels, but they do not directly provide abstractions for
-                agent identity, capability-based discovery, intent-driven
-                communication, trust delegation, provenance-aware exchange, or
-                accountable multi-agent coordination. As a result, many emerging
-                agent systems rely on application-specific integration
-                frameworks, centralized platforms, or ad hoc protocol
-                conventions.
-              </p>
-              <p>
-                AgentNet 2026 invites original research, position papers, and
-                early-stage work on the networking foundations of autonomous
-                agent ecosystems. A central question for the workshop is whether
-                large-scale agent ecosystems require a new architectural thin
-                waist: a minimal interoperability substrate that allows
-                heterogeneous agents, tools, models, platforms, and
-                administrative domains to communicate and coordinate without
-                requiring global agreement on application frameworks, reasoning
-                engines, or trust authorities.
-              </p>
-              <p>
-                The workshop seeks to bring together researchers and
-                practitioners from the network protocols, distributed systems,
-                security, AI systems, information-centric networking, Web
-                architecture, and federated systems to identify the key protocol
-                abstractions, architectural principles, and deployment models
-                for agent networking.
-              </p>
-            </article>
-
-            <aside class="side-stack" data-reveal>
-              <div class="side-card">
-                <h3>Workshop Focus</h3>
-                <p>
-                  Naming, discovery, routing, trust, transport, provenance, and
-                  multi-agent coordination for large-scale autonomous systems.
-                </p>
-              </div>
-              <div class="side-card">
-                <h3>Submission System</h3>
-                <p>
-                  Submit through the
-                  <a href="https://agentnet-icnp26.named-data.net/" target="_blank" rel="noopener">
-                    AgentNet 2026 submission site</a>.
-                </p>
-              </div>
-              <div class="side-card">
-                <h3>Confirmed Logistics</h3>
-                <p>
-                  Half-day morning workshop, October 5, 2026, in Tempe,
-                  Arizona, USA.
-                </p>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section id="topics" class="section">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">Topics of Interest</p>
-            <h2>Research Directions</h2>
-            <p>
-              Topics of interest include, but are not limited to, the following
-              areas.
-            </p>
-          </div>
-
+        <section id="topics">
+          <h1>Topics of Interest</h1>
+          <p>
+            Topics of interest include, but are not limited to, the following
+            areas.
+          </p>
           <div class="topic-grid">
-            <div class="topic-column" data-reveal>
-              <ul class="topic-list">
-                <li>Thin-waist architectures for agent networking</li>
-                <li>Minimal interoperability substrates for agent ecosystems</li>
-                <li>Agent naming, identity, addressing, and persistence</li>
-                <li>Capability-based discovery and routing</li>
-                <li>Intent-driven, goal-oriented, and receiver-driven communication</li>
-                <li>Transport protocols for agent-to-agent and agent-to-service interaction</li>
-                <li>Multi-party, streaming, pub/sub, and asynchronous agent communication</li>
-                <li>Trust delegation, authorization, and accountable action execution</li>
-                <li>Provenance, authenticity, and verifiability of agent outputs</li>
-                <li>Secure communication across independently governed domains</li>
-              </ul>
-            </div>
-            <div class="topic-column" data-reveal>
-              <ul class="topic-list">
-                <li>Policy-aware and federated agent systems</li>
-                <li>Multi-agent coordination, shared state, and synchronization</li>
-                <li>Consistency models for distributed agent state</li>
-                <li>Naming and discovery across heterogeneous agent platforms</li>
-                <li>Relationships to ICN, DNS, Web architecture, and service discovery</li>
-                <li>Network support for dynamic agent instantiation and migration</li>
-                <li>Edge, cloud, and local-inference architectures for agent ecosystems</li>
-                <li>Measurement, benchmarking, and performance evaluation of agent systems</li>
-                <li>Scalability, robustness, and failure handling in large-scale agent ecosystems</li>
-                <li>Real-world deployments, case studies, privacy, governance, and regulation</li>
-              </ul>
-            </div>
+            <ul>
+              <li>Thin-waist architectures for agent networking</li>
+              <li>Minimal interoperability substrates for agent ecosystems</li>
+              <li>Agent naming, identity, addressing, and persistence</li>
+              <li>Capability-based discovery and routing</li>
+              <li>Intent-driven, goal-oriented, and receiver-driven communication</li>
+              <li>Transport protocols for agent-to-agent and agent-to-service interaction</li>
+              <li>Multi-party, streaming, pub/sub, and asynchronous agent communication</li>
+              <li>Trust delegation, authorization, and accountable action execution</li>
+              <li>Provenance, authenticity, and verifiability of agent outputs</li>
+              <li>Secure communication across independently governed domains</li>
+            </ul>
+            <ul>
+              <li>Policy-aware and federated agent systems</li>
+              <li>Multi-agent coordination, shared state, and synchronization</li>
+              <li>Consistency models for distributed agent state</li>
+              <li>Naming and discovery across heterogeneous agent platforms</li>
+              <li>Relationships to ICN, DNS, Web architecture, and service discovery</li>
+              <li>Network support for dynamic agent instantiation and migration</li>
+              <li>Edge, cloud, and local-inference architectures for agent ecosystems</li>
+              <li>Measurement, benchmarking, and performance evaluation of agent systems</li>
+              <li>Scalability, robustness, and failure handling in large-scale agent ecosystems</li>
+              <li>Real-world deployments, case studies, privacy, governance, and regulation</li>
+            </ul>
           </div>
         </section>
 
-        <section class="section">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">Submission Types</p>
-            <h2>What to Submit</h2>
-          </div>
-
-          <div class="card-grid four-up">
-            <article class="info-card" data-reveal>
-              <h3>Full Research Papers</h3>
-              <p>
-                Original research results, systems, protocols, measurements, or
-                evaluations.
-              </p>
-            </article>
-            <article class="info-card" data-reveal>
-              <h3>Short Papers</h3>
-              <p>
-                Early-stage ideas, preliminary results, or focused technical
-                contributions.
-              </p>
-            </article>
-            <article class="info-card" data-reveal>
-              <h3>Position Papers</h3>
-              <p>
-                Architectural viewpoints, research agendas, open problems, or
-                critical perspectives.
-              </p>
-            </article>
-            <article class="info-card" data-reveal>
-              <h3>Experience Papers</h3>
-              <p>
-                Practical systems, implementation experience, operational
-                lessons, or case studies.
-              </p>
-            </article>
-          </div>
+        <section id="submissions">
+          <h1>Submission Types</h1>
+          <ul>
+            <li>
+              <strong>Full research papers:</strong> original research results,
+              systems, protocols, measurements, or evaluations.
+            </li>
+            <li>
+              <strong>Short papers:</strong> early-stage ideas, preliminary
+              results, or focused technical contributions.
+            </li>
+            <li>
+              <strong>Position papers:</strong> architectural viewpoints,
+              research agendas, open problems, or critical perspectives.
+            </li>
+            <li>
+              <strong>Experience papers:</strong> practical systems,
+              implementation experience, operational lessons, or case studies.
+            </li>
+          </ul>
         </section>
 
-        <section class="section">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">Paper Format and Review</p>
-            <h2>Requirements</h2>
-          </div>
-
-          <div class="card-grid two-up">
-            <article class="info-card" data-reveal>
-              <h3>Formatting</h3>
-              <p>
-                Submitted papers must be original and unpublished work and
-                should follow the standard ICNP formatting guidelines.
-              </p>
-              <p>
-                Full papers may be up to 6 pages, excluding references. Short,
-                position, and experience papers may be up to 4 pages, excluding
-                references.
-              </p>
-            </article>
-            <article class="info-card" data-reveal>
-              <h3>Review Process</h3>
-              <p>
-                All submissions will be reviewed by the technical program
-                committee. Reviews will consider technical quality, originality,
-                relevance to the workshop scope, clarity of presentation, and
-                potential to stimulate discussion.
-              </p>
-              <p>
-                At least one author of each accepted paper must register for and
-                present the work at the workshop.
-              </p>
-            </article>
-          </div>
+        <section id="requirements">
+          <h1>Paper Format and Review</h1>
+          <p>
+            Submitted papers must be original and unpublished work and should
+            follow the standard ICNP formatting guidelines.
+          </p>
+          <p>
+            Full papers may be up to 6 pages, excluding references. Short,
+            position, and experience papers may be up to 4 pages, excluding
+            references.
+          </p>
+          <p>
+            All submissions will be reviewed by the technical program committee.
+            Reviews will consider technical quality, originality, relevance to
+            the workshop scope, clarity of presentation, and potential to
+            stimulate discussion.
+          </p>
+          <p>
+            At least one author of each accepted paper must register for and
+            present the work at the workshop.
+          </p>
         </section>
 
-        <section id="dates" class="section">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">Important Dates</p>
-            <h2>Schedule Snapshot</h2>
-            <p>
-              Submission-related deadlines are listed in Anywhere on Earth
-              (AoE) time.
-            </p>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item" data-reveal>
-              <span class="timeline-label">Paper Submission Deadline</span>
-              <strong>June 22, 2026</strong>
-              <p>Deadline: June 22, 2026, Anywhere on Earth (AoE).</p>
-            </article>
-            <article class="timeline-item" data-reveal>
-              <span class="timeline-label">Notification of Acceptance</span>
-              <strong>July 26, 2026</strong>
-              <p>Author notifications will be sent by July 26, 2026, AoE.</p>
-            </article>
-            <article class="timeline-item" data-reveal>
-              <span class="timeline-label">Camera-Ready Deadline</span>
-              <strong>August 25, 2026</strong>
-              <p>
-                ICNP 2026 workshop organizers were asked to meet the conference
-                camera-ready schedule.
-              </p>
-            </article>
-            <article class="timeline-item" data-reveal>
-              <span class="timeline-label">Workshop Date</span>
-              <strong>October 5, 2026</strong>
-              <p>Tempe, Arizona, USA.</p>
-            </article>
+        <section id="dates">
+          <h1>Important Dates</h1>
+          <p>
+            Submission-related deadlines are listed in Anywhere on Earth (AoE)
+            time.
+          </p>
+          <div class="table-responsive">
+            <table class="dates-table">
+              <tbody>
+                <tr>
+                  <td>Paper submission deadline</td>
+                  <td>June 22, 2026 AoE</td>
+                </tr>
+                <tr>
+                  <td>Notification of acceptance</td>
+                  <td>July 26, 2026 AoE</td>
+                </tr>
+                <tr>
+                  <td>Camera-ready deadline</td>
+                  <td>August 25, 2026</td>
+                </tr>
+                <tr>
+                  <td>Workshop date</td>
+                  <td>October 5, 2026, Tempe, Arizona, USA</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
-      </main>
+      </div>
+    </main>
 
-      <footer class="site-footer"></footer>
-    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <h6>&copy; 2026 AgentNet Organizing Committee</h6>
+        <p>Last updated: <span id="lastUpdate"></span></p>
+      </div>
+    </footer>
   </body>
 </html>
