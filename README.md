@@ -9,8 +9,9 @@ Static GitHub Pages site for the ICNP 2026 workshop:
 ## Files
 
 - `index.html`: site content and structure
+- `tpc.html`: workshop organizers and technical program committee
 - `styles.css`: visual design and responsive layout
-- `main.js`: small reveal animation for section entrances
+- `main.js`: mobile navigation toggle and last-updated timestamp
 - `.github/workflows/deploy-pages.yml`: GitHub Pages deployment via GitHub Actions
 
 ## Deployment
